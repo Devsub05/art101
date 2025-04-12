@@ -1,0 +1,28 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+h1 {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 5px hsl(0, 98%, 20%);
+    background-color: #e6c4b0;
+    color: rgb(79, 29, 2);
+    font-family:cursive;
+  }
+p {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: ridge 5px palevioletred;
+  background-color:hwb(23 55% 2%);
+  color:rgb(75, 1, 29);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html {
+  background-color: indianred;
+}
+.twin-sis {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
