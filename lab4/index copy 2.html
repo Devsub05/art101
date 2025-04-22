@@ -24,19 +24,15 @@
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>I probably worked for about 6 hours on this assignment trying to figure out what mistakes I made.
-						What was hard about this is that I didn't know why the CSS was affecting my html
-						I also definetly needed the help of Chatgpt to figure our why parts of my final website wasn't working.
-						I also figured out how to link back to my hompage.
-				        I could have started earlier, I just had a lot of work ramping up this week </p>
-					<p> I had the help of AI to code the css component. </p>
+					<p>I probably worked for about 6 hours on this assignment trying to figure out if I made any mistakes.
+				       I could have started earlier, I just had a lot of work ramping up this week </p>
+					<p> I had the help of AI to code. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
 					<h3>Task 1: Pseudocode an everyday task</h3>
 					<h4>Task: How to Make Pongal</h4>
-					<img class="venpongal" src="../lab4/img/ven-pongal.jpg" >
 <pre>
 How to make pongal (A south Indian dish from my home)
 												
@@ -97,9 +93,8 @@ How to make pongal (A south Indian dish from my home)
 </pre>
             		<h5> Task 2: Pseudocode for a Simple Computer Game</h5>
 					<h6>Game: Pictionary</h6>
-					<img class="Pictionary" src="../lab4/img/Pictionary.jpg" >
 <pre>
-Task: Build a digital version of Pictionary where players draw and guess words.
+High-Level Goal: Build a digital version of Pictionary where players draw and guess words.
 						
 	1. Start a Game
 		- Start up game screen
@@ -108,49 +103,52 @@ Task: Build a digital version of Pictionary where players draw and guess words.
 						
 	2. Set Up the Game
 		- Gather a certain number of players (your choice)
-		- Assign names to each of the players
-		- Determine the drawing order in a randomized fashion to pick a drawer
+		- Assign names to each player
+		- Randomly determine the drawing order
 						
-	3. Start a Game Loop
-	 - Repeat until the winning condition is met:
+	3. Begin Game Loop
+	 - Repeat for every round or until the winning condition is met:
+		 - Randomly determine to draw on a player
 		 - Select a word for the drawer randomly
 		 - The word should be hidden from the guessers
 						
-	4. Drawing Time
+	4. Drawing Phase
 		- Display a drawing canvas to the drawer
-		- Enable basic drawing tools (pen,erase,clear,color)
+		- Enable basic drawing tools (pen, color, erase, clear)
 		- Start a timer to make the game more challenging
 						
-	5. Guessing Time (runs during drawing time)
-		- Guessers can guess through chat or text box
+	5. Guessing Phase (runs during drawing)
+		- Guessers can input guesses via chat or text box
 		- System checks if each guess matches the word
 		- If a guesser guesses correctly:
 				- End round
 				- Distribute points to guesser and drawer
 						
-	6. End of Round (once everyone guesses)
+	6. End of Round
 		- Show correct word (if no one guesses)
 		- Update the scoreboard
 		- Move to next player in the correct turn order
 						
 	7. End Game
-		- After a set number of rounds: (3)
+		- After a set number of rounds:
 		- Display final scores
 		- Announce the winner
 		- Offer option to play again or exit
 	</pre>
 					<h7><strong>Task 3: Turn pseudocode into comments using JS</strong></h7>
-<pre><code>
+<pre>
 /**
- * Pictionary.
+ * Summary. (use period)
  *
- * People try to guess what a person intending to draw.
+ * Description. (use period)
  *
+ * @link   URL
+ * @file   This files defines the MyClass class.
  * @author Devika Subramaniam.
  * @since  04.21.2025
  */
 
-
+/** jshint {inline configuration here} */
 
 // High-Level Goal: Build a digital version of Pictionary where players draw and guess words.
 
@@ -192,7 +190,7 @@ Task: Build a digital version of Pictionary where players draw and guess words.
     // - Display final scores
     // - Announce the winner
     // - Offer option to play again or exit
-</pre></code>
+</pre>
 						  <div id="output"></div>
 			</div>
 		</section>
