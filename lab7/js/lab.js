@@ -1,21 +1,28 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/*
+ * index.js - To experiment with JS
+ * Created: May 3
+ * Lab 7
+ * Author: Devika Subramaniam
+*/
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// ChangeMyName - asks the user's name and changes/sorts out the letter
+function fixMyName() {
+  var userName = window.prompt("Hi there? What is your name?");
+  console.log("userName =", userName);
+  //split string to array
+  var nameArray= userName.split('');
+  console.log("nameArray =", nameArray);
+  //sort array
+  var nameArraySort = nameArray.sort();
+  console.log("nameArraySort =", nameArraySort);
+  //join array back to string
+  var nameSorted = nameArraySort.join('');
+  console.log("nameSorted =", nameSorted);
+  //Note to future self: I could do the above in one line
+  //   userName.toLowerCase().split("").sort().join("")
+  return nameSorted;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// Output
+document.getElementById("output").innerHTML = 
+  "All right! Here is your name all fixed up: " + fixMyName();
