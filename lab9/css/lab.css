@@ -1,0 +1,68 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:hwb(23 55% 2%);
+  color: #082b4e;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Main content styling */
+main#content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #faf6ee;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headers */
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #042b51;
+  margin-top: 1.5em;
+}
+
+h3 {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.4em; /* new */
+  color: #333;
+}
+
+/* Paragraph spacing */
+p {
+  margin: 10px 0;
+}
+
+/* Minor section styling */
+.minor-section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f5eddc;
+  border-left: 4px solid #4b0801;
+  border-radius: 4px;
+}
+
+.output {
+  margin-top: 1em; /* add this */
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f5eddc;
+  border-left: 4px solid #4b0801;
+  border-radius: 4px;
+}
+
+.special {
+  background-color: rgb(194, 194, 214);
+  border: dotted 50px red;
+  color: rgb(142, 53, 67);
+  font-weight: bold;
+}
