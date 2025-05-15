@@ -1,51 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
-
-	<!-- Use UTF character set, a good idea with any webpage -->
-  	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	
-	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/lab.css">
+    <title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="js/lab.js" defer></script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
-			<div class="minor-section">
+			<h1> Lab 10: JavaScript for the Web</h1>
+			<div id="challenge" class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p> Experiment with DOM manipulation with a partner.</p>
 			</div>
 
-			<div class="minor-section">
+			<div id="problems" class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>Making buttons is kind of hard. But blending css, html, and javascript has been ridicously difficult. Below I will mentioned how I solved my problems</p>
+					<ul>
+					<li> I needed to look up videos and ask other friends to understand what I'm doing. This was my main support for this lab</li>
+					<li> I messed up the Javascript a few times</li>
+					<li> Everything was working, but making the CSS was really confusing for me. I used the example and what I learned in section to help with this. I also used chatgpt to add the nth part to make it seem like text messages </li>
+					<li> My Javascript wasn't showing up in my final live browser</li>
+				</ul>
+					<p>I tried to watch tutorials on youtube again. I also referred back to lecture slides and my section notes as much as I could, plus the assignment itself (that helped me the most). I used chatgpt to understand what i'm doing but nothing too crazy</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>I probably worked for about 8 hours on this assignment trying to figure out what mistakes I made plus trying to figure out what I'm doing in the first place. Referring to Wes modes' website helped me a lot in this process.
+					 	The main thing I could have worked on is time management. I feel like I'm a little lost at the moment, but I don't even have time to focus in this class because I'm trying to balance other classes at the same time</p>
 			</div>
 
-			<div class="minor-section">
+			<div id="results" class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
+					<p>Look below for the html page. You will see my javascript in the script output section. I worked the harderst for the javascript part! Overall, I would say 
+						I'm a little lost, but I got everything to work- so hopefully I'm understanding everything correctly!</p>
+					<ul>
+							<li><a href="index.html">Lab 10: JavaScript for the Web</a></li>
+					</ul>
 			</div>
+
+			<div class="output">
+				<h2>Script Output</h2>
+				<div id="output"></div>
+				<button id="make-convo">Say Something</button>
+			  </div>
+						  
 		</section>
 		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
+			<li><a href="../index.html">Back to homepage</a></li>
 		</nav>
 	</main>
 </body>

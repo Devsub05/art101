@@ -1,21 +1,33 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/*
+ * lab9.js - Working with your partner, experiment with jQuery
+ * Created: May 12
+ * Requirements: jQuery must be loaded for this script to work.
+ * Author: Devika Subramaniam
+*/
 
-// Constants
+// this function generate a random piece of placeholder text
+function generateRandomText(){
+  const text = "Hi, my name is Devika and I'm experimenting with Javascript buttons. I want to see how this will impact my final project. I'll change this if I need";
+  const min = 3;
+  const max = 100;
+  const randLen = Math.floor(Math.random()*(max - min + 1)) + min;
 
-// Functions
+  // get a random start index to portion the above text
+  const randStart = Math.floor(Math.random()*(text.length - randLen + 1));
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+  // return the randomly generated portion
+  return text.slice(randStart, randStart + randLen);
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// wait for the DOM to fully load before attaching an event
+$(document).ready(function (){
+  
+  // click listener for the "say something" button
+  $("#make-convo").click(function(){
+    // Get another fake dialogue
+    const newText = generateRandomText();
 
-// let's get this party started
-main();
+    // append a new div with a generated text inside the #output div
+    $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+  });
+});
