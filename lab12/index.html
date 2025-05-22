@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
-
-	<!-- Use UTF character set, a good idea with any webpage -->
-  	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	
-	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/lab.css">
+    <title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="js/lab.js" DEFER></script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
-			<div class="minor-section">
+			<h1> Lab 12: Conditionals</h1>
+			<div id="challenge" class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p> Create a function that depends on conditionals with a partner.</p>
 			</div>
 
-			<div class="minor-section">
+			<div id="problems" class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>This is definetly the harderst lab for me. My JS was just not working. I had to wrap my text ($(document).ready) for it to work again</p>
+					<ul>
+					<li>My sister (who has taken a coding class before) told me to "label for="input" tags instead of "paragraph" tags to make my life a little easier in the script output section</li>
+					<li> I messed up the Javascript a few times. I debugged this with console log.</li>
+					<li> Making the js show up was the hardest part and I also had to change part of my javascript away from the example. I had to do (result.class and result.text instead of the str thing. I did get help from chatgpt for this part cause no one I asked could help me.)</li>
+					<li> I had to debug this multiple times through console.log</li>
+				</ul>
+					<p>I tried to watch tutorials on youtube again. I also referred back to lecture slides and my section notes as much as I could, plus the assignment itself (that helped me the most). I used chatgpt to understand why my javascript was working. I honestly think I might have went more than my skill level which is why this lab was so difficult for me</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>I probably worked for about 9 hours on this assignment trying to figure out what mistakes I made plus trying to figure out what I'm doing in the first place. Referring to Wes modes' website and console log helped me a lot in this process. I will say I had a lot of help from chatgpt in this assignement. I'm not understanding conditionals the best. The codes I used from chatgpt were mentioned above. Section notes helped but lecture notes did not.
+					 	The main thing I could have worked on is time management. I think I will be struggling to balance other classes with this class through the rest of the quarter to be honest</p>
 			</div>
 
-			<div class="minor-section">
+			<div id="results" class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
+					<p>Look below for the html page. You will see my javascript in the script output section. I worked the harderst for the javascript part! I'm starting to understand and get fluent with Javascript (with a few hurdles ofc!). Conditionals are tough, but I think I'm starting to have a basic understanding of it. I hope to get better later, but I hope this lab works out fine!</p>
+					<ul>
+							<li><a href="index.html">Lab 12: Conditionals</a></li>
+					</ul>
 			</div>
+
+
+			<div class="minor-section">
+				<h2>Script Output</h2>
+				<div id="output" class="output"></div>
+				<label for="input">Please enter your name for Marvel character sorting:</label><br>
+				<input type="text" id="input"><br>
+				<button id="button">Submit</button>
+			  </div>
+
+						  
 		</section>
 		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
+		<ul>
+			<li><a href="../index.html">Back to homepage</a></li>
+		</ul>
 		</nav>
 	</main>
 </body>
