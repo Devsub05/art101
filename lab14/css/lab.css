@@ -1,9 +1,122 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:hwb(23 55% 2%);
+  color: #082b4e;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+/* Main content styling */
+main#content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #faf6ee;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headers */
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #042b51;
+  margin-top: 1.5em;
+}
+
+h3 {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.4em; /* new */
+  color: #333;
+}
+
+/* Paragraph spacing */
+p {
+  margin: 10px 0;
+}
+
+/* Minor section styling */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f5eddc;
+  border-left: 4px solid #4b0801;
+  border-radius: 4px;
+}
+
+.output {
+  margin-top: 1em; /* add this */
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f5eddc;
+  border-left: 4px solid #4b0801;
+  border-radius: 4px;
+}
+
+/* === Output Animation (fade-in) === */ /* delete in future*/
+#output {
+  display: block; /* Start hidden */
+  opacity: 1;
+}
+
+
+/* === Marvel Character Styles === */
+.ironman {
+  background-color: #fa896a;
+  border-left: 5px solid #ff4500;
+  color: #7f2900;
+}
+
+.loki {
+  background-color: #e6ffe6;
+  border-left: 5px solid #2e8b57;
+  color: #145c33;
+}
+
+.scarlet {
+  background-color: #fccffa;
+  border-left: 5px solid #c41e3a;
+  color: #800000;
+}
+
+.blackwidow {
+  background-color: #b8b8b8;
+  border-left: 5px solid #000;
+  color: #000;
+}
+
+.thor {
+  background-color: #e0f7ff;
+  border-left: 5px solid #1e90ff;
+  color: #003366;
+}
+
+.spiderman {
+  background-color: #fce4ec;
+  border-left: 5px solid #020b43;
+  color: #0619c6;
+}
+
+.cap {
+  background-color: #e7f3fe;
+  border-left: 5px solid #022b54;
+  color: #012346;
+}
+
+.marvel {
+  background-color: #fff8e1;
+  border-left: 5px solid #ffc107;
+  color: #8a6d00;
+}
+
+#output {
+  display: none; /* Start hidden for fadeIn */
+  transition: opacity 0.6s ease;
+}
