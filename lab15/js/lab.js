@@ -1,5 +1,5 @@
 /*
- * lab 14: AJAX
+ * lab 15: AJAX
 
 * This uses jquery to fetch data from the yes/no API
 * When the user clicks the activate button it sends a GET request to the app
